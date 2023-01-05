@@ -64,7 +64,6 @@ img {
     width: 1158px;
     padding: 0px 15px;
     margin: 0 auto;
-    outline: 1px solid red;
 }
 
 /**INDEX PAGE STYLES*/
@@ -323,7 +322,7 @@ img {
     justify-content: center;
 }
 .social-item-icon {
-    fill: var(--light);
+    fill: var(--primary-bg);
 }
 .social-item-link:hover,
 .social-item-link:focus {
@@ -373,6 +372,11 @@ img {
     padding: 100px 0px 100px 0px;
     background-color: var(--dark);
 }
+.footer-container {
+    display: flex;
+}
+/* .footer-logo-container {
+} */
 .footer-logo {
     font-family: var(--secondary-font);
     font-weight: 800;
@@ -399,6 +403,44 @@ img {
     max-width: 264px;
     margin-top: 16px;
 }
+.footer-social-container {
+    margin-left: 120px;
+}
+.footer-social-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--primary-bg);
+}
+.footer-social-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 16px;
+}
+.fs-list-item {
+    width: 40px;
+    height: 40px;
+}
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: #31d0aa;
+    outline: none;
+}
+.footer-social-icon {
+    fill: var(--primary-bg);
+}
+
 /*!----------------------------------------------------------------*/
 
 /**PORTFOLIO PAGE STYLES*/

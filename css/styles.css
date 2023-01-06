@@ -205,7 +205,6 @@ img {
     padding-top: 120px;
     background-color: var(--primary-bg);
 }
-
 .our-strengths-list {
     display: flex;
     gap: 24px;
@@ -213,26 +212,21 @@ img {
 .our-strengths-item {
     width: calc((100% - 72px) / 4);
 }
-.our-strengths-item::before {
-    content: "";
-    display: block;
+.os-icons-list {
+    display: flex;
+    gap: 24px;
     height: 112px;
+}
+.os-icons-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc((100% - 72px) / 4);
     background-color: var(--light);
-    background-repeat: no-repeat;
-    background-position: center;
+    border-radius: 4px;
 }
-.icon-antenna::before {
-    background-image: url(../images/antenna.svg);
-}
-.icon-clock::before {
-    background-image: url(../images/clock.svg);
-}
-.icon-diagram::before {
-    background-image: url(../images/diagram.svg);
-}
-.icon-astronaut::before {
-    background-image: url(../images/astronaut.svg);
-}
+/* .os-item-icon {
+} */
 .our-strengths-title {
     font-weight: 600;
     font-size: 20px;

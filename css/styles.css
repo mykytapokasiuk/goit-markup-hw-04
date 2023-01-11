@@ -117,11 +117,6 @@ img {
 .header-item .current {
     color: var(--hover-focus);
 }
-.header-link:hover,
-.header-link:focus {
-    color: var(--hover-focus);
-    outline: none;
-}
 .header-contacts-list {
     display: flex;
     gap: 40px;
@@ -138,13 +133,9 @@ img {
     letter-spacing: 0.02em;
     padding: 24px 0px 24px 0px;
 }
-.header-contacts-mail:hover,
-.header-contacts-mail:focus {
-    color: var(--hover-focus);
-    outline: none;
-}
-.header-contacts-tel:hover,
-.header-contacts-tel:focus {
+.header-contacts-mail:is(:hover, :focus),
+.header-contacts-tel:is(:hover, :focus),
+.header-link:is(:hover, :focus) {
     color: var(--hover-focus);
     outline: none;
 }
@@ -192,8 +183,7 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     margin-top: 48px;
 }
-.big-banner-btn:hover,
-.big-banner-btn:focus {
+.big-banner-btn:is(:hover, :focus) {
     background-color: var(--hover-focus);
     color: var(--primary-bg);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -318,8 +308,7 @@ img {
 .social-item-icon {
     fill: var(--primary-bg);
 }
-.social-item-link:hover,
-.social-item-link:focus {
+.social-item-link:is(:hover, :focus) {
     background-color: var(--hover-focus);
     outline: none;
 }
@@ -348,13 +337,11 @@ img {
     border: 1px solid var(--subtle-text);
     border-radius: 4px;
 }
-.customers-item-link:hover,
-.customers-item-link:focus {
+.customers-item-link:is(:hover, :focus) {
     border-color: var(--hover-focus);
     outline: none;
 }
-.customers-item-link:hover .customers-icon,
-.customers-item-link:focus .customers-icon {
+.customers-item-link:is(:hover, :focus) .customers-icon {
     fill: var(--hover-focus);
 }
 .customers-icon {
@@ -426,8 +413,7 @@ img {
     justify-content: center;
     align-items: center;
 }
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social-link:is(:hover, :focus) {
     background-color: #31d0aa;
     outline: none;
 }
@@ -463,8 +449,7 @@ img {
     cursor: pointer;
     padding: 12px 24px;
 }
-.filter-btn:hover,
-.filter-btn:focus {
+.filter-btn:is(:hover, :focus) {
     background-color: var(--hover-focus);
     color: var(--primary-bg);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
